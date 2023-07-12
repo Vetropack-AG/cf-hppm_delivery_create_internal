@@ -1,6 +1,6 @@
 sap.ui.define([
 	"sap/ui/core/UIComponent",
-	"zvgt/hppm/delivery/create/model/models",
+	"zvgt/hppm/intdelivery/create/model/models",
 	"sap/ui/Device",
 	"sap/ui/fl/FakeLrepConnectorLocalStorage"
 ], function (UIComponent, models, Device, FakeLrepConnectorLocalStorage) {
@@ -25,7 +25,7 @@ sap.ui.define([
 	 * @class 
 	 */
 
-	return UIComponent.extend("zvgt.hppm.delivery.create.Component", {
+	return UIComponent.extend("zvgt.hppm.intdelivery.create.Component", {
 
 		metadata: {
 			manifest: "json"

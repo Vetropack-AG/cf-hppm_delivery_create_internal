@@ -2,7 +2,7 @@
 
 specVersion: "2.4"
 metadata:
-  name: zvgt.hppm.delivery.create
+  name: zvgt.hppm.intdelivery.create
 type: application
 builder:
   resources:

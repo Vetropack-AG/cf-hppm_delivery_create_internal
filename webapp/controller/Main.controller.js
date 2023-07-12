@@ -1,7 +1,7 @@
 sap.ui.define([
-    "zvgt/hppm/delivery/create/controller/BaseController",
+    "zvgt/hppm/intdelivery/create/controller/BaseController",
     "sap/base/Log",
-    "zvgt/hppm/delivery/create/model/formatter",
+    "zvgt/hppm/intdelivery/create/model/formatter",
     "sap/ushell/services/URLParsing",
     "sap/ui/core/routing/HashChanger"
 ], function (BaseController, Log, formatter, URLParsing, HashChanger) {
@@ -46,7 +46,7 @@ sap.ui.define([
      * @class 
      */
 
-    return BaseController.extend("zvgt.hppm.delivery.create.controller.Main", {
+    return BaseController.extend("zvgt.hppm.intdelivery.create.controller.Main", {
         formatter: formatter,
 
         /* =========================================================== */
@@ -531,7 +531,7 @@ sap.ui.define([
         },
 
         _setDeliveryType: function () {
-            if (this._isOutboundDelivery() || zvgt.hppm.isExternalUser()) {
+            if (this._isOutboundDelivery()/*  || zvgt.hppm.isExternalUser() */) {
                 this._sDeliveryType = zvgt.hppm.DELIVERY_TYPE.EXTERNAL;
             } else {
                 this._sDeliveryType = zvgt.hppm.DELIVERY_TYPE.INTERNAL;

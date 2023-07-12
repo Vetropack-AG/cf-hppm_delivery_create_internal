@@ -1,7 +1,7 @@
 {
     "_version": "1.12.0",
     "sap.app": {
-        "id": "zvgt.hppm.delivery.create",
+        "id": "zvgt.hppm.intdelivery.create",
         "ach": "PA-FIO",
         "type": "application",
         "i18n": "i18n/i18n.properties",
@@ -31,7 +31,7 @@
                         "parameters": {},
                         "additionalParameters": "allowed"
                     },
-                    "semanticObject": "OutboundDelivery",
+                    "semanticObject": "InternalDelivery",
                     "action": "create",
                     "title": "{{appTitle.cf}}"
                 }
@@ -58,7 +58,7 @@
         "flexEnabled": false,
         "handleValidation": true,
         "rootView": {
-            "viewName": "zvgt.hppm.delivery.create.view.App",
+            "viewName": "zvgt.hppm.intdelivery.create.view.App",
             "type": "XML",
             "async": true,
             "id": "App"
@@ -79,7 +79,7 @@
             "i18n": {
                 "type": "sap.ui.model.resource.ResourceModel",
                 "settings": {
-                    "bundleName": "zvgt.hppm.delivery.create.i18n.i18n"
+                    "bundleName": "zvgt.hppm.intdelivery.create.i18n.i18n"
                 }
             },
             "": {
@@ -110,7 +110,7 @@
                 "routerClass": "sap.m.routing.Router",
                 "viewType": "XML",
                 "async": true,
-                "viewPath": "zvgt.hppm.delivery.create.view",
+                "viewPath": "zvgt.hppm.intdelivery.create.view",
                 "controlAggregation": "pages",
                 "controlId": "app",
                 "clearControlAggregation": false,
@@ -149,6 +149,6 @@
     },
     "sap.cloud": {
         "public": true,
-        "service": "zvgthppmdeliverycreate"
+        "service": "zvgthppmdeliverycreateinternal"
     }
 }

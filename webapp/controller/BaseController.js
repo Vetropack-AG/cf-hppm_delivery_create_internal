@@ -24,7 +24,7 @@ sap.ui.define([
 	 * @class 
 	 */
 
-	return Controller.extend("zvgt.hppm.delivery.create.controller.BaseController", {
+	return Controller.extend("zvgt.hppm.intdelivery.create.controller.BaseController", {
 
 		/* =========================================================== */
 		/* public methods                                              */
@@ -102,7 +102,7 @@ sap.ui.define([
 		 */
 		getFragment: function (sFragmentId, oContext) {
 			if (!oContext[sFragmentId]) {
-				oContext[sFragmentId] = sap.ui.xmlfragment("zvgt.hppm.delivery.create.view.fragment." + sFragmentId, oContext);
+				oContext[sFragmentId] = sap.ui.xmlfragment("zvgt.hppm.intdelivery.create.view.fragment." + sFragmentId, oContext);
 				oContext.getView().addDependent(oContext[sFragmentId]);
 			}
 			return oContext[sFragmentId];
@@ -168,7 +168,7 @@ sap.ui.define([
 		getResourceBundle: function () {
 			if (!this._oBundle) {
 				this._oBundle = ResourceBundle.create({
-					url: jQuery.sap.getModulePath("zvgt.hppm.delivery.create") + "/i18n/i18n.properties",
+					url: jQuery.sap.getModulePath("zvgt.hppm.intdelivery.create") + "/i18n/i18n.properties",
 					async: false
 				});
 			}
