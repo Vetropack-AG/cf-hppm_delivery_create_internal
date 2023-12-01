@@ -943,7 +943,7 @@ sap.ui.define([
             if (!bOutbound) {
                 this._setDeliveryProperty("Incoterm", "DAP");
                 var oRadioGroup = this.getView().byId("incotermGroup");
-                oRadioGroup.setEditable(false);
+                //oRadioGroup.setEditable(false);
                 oRadioGroup.setSelectedIndex(0);
             }
         }
